@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    position: relative;
+
+}
+
+
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 70px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500px;
+    size: 16px;
+    line-height: 24px;
+}
+
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .navbar-toggle-icon {
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000000;
+    position: relative;
+    
+  }
+  
+  .navbar-toggle-icon::before,
+  .navbar-toggle-icon::after {
+    content: '';
+    width: 1.5rem;
+    height: 0.125rem;
+    background-color: #000000;
+    position: absolute;
+    left: 0px;
+    transition: transform 0.3s ease;
+  }
+  
+  .navbar-toggle-icon::before {
+    top: -0.5rem;
+  }
+  
+  .navbar-toggle-icon::after {
+    top: 0.5rem;
+    
+  }
+
+.navbar-icons {
+    display: flex;
+    gap: 30px;
+
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1px;
+    }
+
+    .nav-menu.show {
+        display: flex;
+
+    }
+
+    .navbar-icons {
+        display: none;
+        
+    }
+
+    .navbar-icons.show {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-menu li {
+        text-align: center;
+        padding: 10px 0;
+        
+    }
+}
