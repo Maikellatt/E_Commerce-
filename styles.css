@@ -13,6 +13,7 @@ body {
     padding: 10px 20px;
     background-color: #FFFFFF;
     position: relative;
+    
 
 }
 
@@ -38,19 +39,19 @@ body {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-  }
+}
   
-  .navbar-toggle-icon {
+.navbar-toggle-icon {
     display: block;
     width: 1.5rem;
     height: 0.125rem;
     background-color: #000000;
     position: relative;
     
-  }
+}
   
-  .navbar-toggle-icon::before,
-  .navbar-toggle-icon::after {
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
     content: '';
     width: 1.5rem;
     height: 0.125rem;
@@ -58,21 +59,80 @@ body {
     position: absolute;
     left: 0px;
     transition: transform 0.3s ease;
-  }
+}
   
-  .navbar-toggle-icon::before {
+.navbar-toggle-icon::before {
     top: -0.5rem;
-  }
+}
   
-  .navbar-toggle-icon::after {
+.navbar-toggle-icon::after {
     top: 0.5rem;
     
-  }
+}
 
 .navbar-icons {
     display: flex;
     gap: 30px;
 
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+  
+.dropdown-menu.active {
+    display: block;
+}
+  
+.dropdown-logo {
+    display: block;
+    margin-bottom: 1.5rem;
+}
+  
+.dropdown-logo img {
+    height: 2.5rem;
+}
+  
+.dropdown-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+}
+  
+.dropdown-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+  
+.dropdown-link:hover {
+    color: #A67B5B;
+}
+  
+.dropdown-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+  
+.dropdown-icon img {
+    height: 1.5rem;
+    transition: opacity 0.3s ease;
+}
+  
+.dropdown-icon:hover img {
+    opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -111,5 +171,35 @@ body {
         text-align: center;
         padding: 10px 0;
         
+    }
+    .dropdown-menu {
+        display: none;
+        position: static;
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .dropdown-menu.active {
+        display: block;
+    }
+    
+    .dropdown-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .dropdown-links {
+        margin-bottom: 1rem;
+    }
+    
+    .dropdown-link {
+        font-size: 0.875rem;
+    }
+    
+    .dropdown-icons {
+        gap: 1rem;
+    }
+    
+    .dropdown-icon img {
+        height: 1.25rem;
     }
 }
