@@ -1,4 +1,4 @@
-
+/* BANNER */
 .banner {
     position: relative; 
     width: 100%;
@@ -22,7 +22,7 @@
 }
 
 
-.banner-info {
+.banner-box {
     position: absolute;  
     background-color: #FFF3E3;
     top: 30%;  
@@ -33,13 +33,13 @@
 }
 
 
-.banner-info h3 {
+.banner-box h3 {
     font-size: 16px;
     font-weight: 600;
     color: #333333; 
 }
 
-.banner-info h1 {
+.banner-box h1 {
     font-size: 40px;
     margin: 10px 0;
     font-weight: 700;
@@ -48,7 +48,7 @@
 
 }
 
-.banner-info h2 {
+.banner-box h2 {
     font-size: 18px;
     font-weight: 500;
     color: #333333;
@@ -59,10 +59,13 @@
     padding: 12px 24px;
     background-color: #B88E2F; 
     color: #fff;
-    text-decoration: none; 
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center; 
     font-size: 18px;
     font-weight: 600;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 30%;
 }
 
 .banner-button:hover {
@@ -74,10 +77,90 @@
     transform: scale(0.95); /* Vajutamisel kergelt kahandab nuppu */
 }
 
-/* Mobiilivaates väiksem nupp */
+
 @media (max-width: 768px) {
     .banner-button {
         font-size: 16px;
         padding: 10px 20px;
     }
+    .banner {
+        height: 450px;
+    }
+    .banner-box {
+        top: 40px; 
+        right: 16px; 
+        left: 16px; 
+        width: auto; 
+        padding: 20px;
+        text-align: center;
+    }
+    .banner-box h1 {
+        font-size: 26px;
+    }
+        
 }
+
+/* BROWSE */
+
+.browse {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Määrab vahe elementide vahel */   
+}
+
+.browse-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.browse-text h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #333333;
+    margin-bottom: 5px;
+    padding-top: 30px;
+    
+    
+}
+
+.browse-text p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+    color: #666666;
+    margin-top: 5px;
+    padding-bottom: 30px;
+    
+}
+.browse-options {
+    display: flex;
+    padding-left: 120px;
+    padding-right: 120px;
+    gap: 20px;
+
+}
+
+.browse-option p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+    .browse-options {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .browse-options img {
+        max-width: 250px; 
+    }
+}
+
+/* PRODUCTS */
+
+
