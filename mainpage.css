@@ -297,10 +297,6 @@
     
 }
 
-@media screen and (min-width: 1024px) and (max-height: 1366px) {
-
-}
-
 
 /* PRODUCTS */
 
@@ -819,54 +815,30 @@
 
     .rooms-text h2 {
         align-items: center;
+        
     }
 
     .rooms-text p {
         align-items: center;
-        margin-left: 150px;
+        
     }
 
     .rooms-overlay2 {
-        margin-left: 10px;
+        margin-left: 2px;
     }
 
     .rooms-pagination {
         margin-left: -20px;
     }
 
+    .rooms-next-btn {
+        margin-right: 40px;
+    }
+
     
 }
 
-@media screen and (min-width: 1024px) and (max-height: 1366px) {
-    .rooms-text {
-        display: flex;
-        justify-content: flex-start;
-        
-    }
 
-    .rooms-text h2 {
-        font-size: 25px;
-        margin-left: -250px;
-    }
-
-    .rooms-text p {
-        margin-left: -170px;
-        font-size: 13px;
-        
-    }
-
-    .rooms-text button {
-        margin-left: -270px;
-    }
-
-    .rooms-secondary-img {
-        margin-right: 30px;
-    }
-
-    .rooms-next-btn {
-        margin-right: 50px;
-    }
-}
 
 
 
@@ -902,9 +874,9 @@
 }
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 veergu */
-    grid-template-rows: repeat(3, 200px); /* 3 rida, igaüks 200px */
-    gap: 10px; /* Vahe piltide vahel */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px); 
+    gap: 10px; 
     width: 100%;
 }
 
@@ -953,5 +925,4 @@
     margin-top: 200px;
     margin-left: -110px;
 }
-
 
