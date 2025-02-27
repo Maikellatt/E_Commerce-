@@ -3,9 +3,480 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="./media/Frame 168 (1).svg" alt="Furniro_logo">
+        </div>
+        <nav>
+            <button class="navbar-toggle" aria-label="Toggle navigation">
+                <span class="navbar-toggle-icon"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index2.html">Shop</a></li>
+                <li><a href="./index4.html">Contact</a></li>
+                <li><a href="./index5.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="navbar-icons">
+            <a href="" class="navbar-icon">
+                <img src="./media/mdi_account-alert-outline.svg" alt="alert_icon">
+            </a>
+            <a href="" class="navbar-icon">
+                <img src="./media/akar-icons_search.svg" alt="search_icon">
+            </a>
+            <a href="" class="navbar-icon">
+                <img src="./media/akar-icons_heart.svg" alt="heart_icon">
+            </a>
+            <a href="" class="navbar-icon">
+                <img src="./media/ant-design_shopping-cart-outlined.svg" alt="car_icon">
+            </a>
+        </div>
+        <div class="dropdown-menu">
+            <ul class="dropdown-links">
+                <li><a href="./index.html" class="dropdown-link">Home</a></li>
+                <li><a href="./index2.html" class="dropdown-link">Shop</a></li>
+                <li><a href="./index4.html" class="dropdown-link">Contact</a></li>
+                <li><a href="./index5.html" class="dropdown-link">Blog</a></li>
+            </ul>
+            <div class="dropdown-icons">
+                <a href="" class="dropdown-icon">
+                    <img src="./media/mdi_account-alert-outline.svg" alt="alert_icon">
+                </a>
+                <a href="" class="dropdown-icon">
+                    <img src="./media/akar-icons_search.svg" alt="search_icon">
+                </a>
+                <a href="" class="dropdown-icon">
+                    <img src="./media/akar-icons_heart.svg" alt="heart_icon">
+                </a>
+                <a href="" class="dropdown-icon">
+                    <img src="./media/ant-design_shopping-cart-outlined.svg" alt="car_icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- Shop Banner -->
+        <div class="shop-banner">
+            <img src="./media/shop-banner.png" alt="shop_banner">
+            <div class="shop-banner-overlay">
+                <h1 class="main-shop">Shop</h1>
+                <div class="home-shop">
+                    <a href="index.html">Home</a> → <span>Shop</span> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter section -->
+         <section class="toolbar">
+            <div class="toolbar-left">
+                <img src="./media/filter-icon.png" class="filter-icon" alt="filter-icon">
+                <button class="filter-btn">Filter</button>
+                <img src="./media/view-howmany.png" class="view-howmany" alt="view-howmany">
+                <img src="./media/bi_view-list.png" class="list-icon" alt="view-howmany">
+                <span class="results-text">Showing 1-16 of 32 results</span>
+            </div>
+            <div class="toolbar-right">
+                <div class="dropdown show-dropdown">
+                  <label for="show">Show</label>
+                  <select id="show">
+                    <option>16</option>
+                    <option>24</option>
+                    <option>32</option>
+                  </select>
+                </div>
+                <div class="dropdown sort-dropdown">
+                  <label for="sort">Sort by</label>
+                  <select id="sort">
+                    <option>Default</option>
+                    <option>Price (Low to High)</option>
+                    <option>Price (High to Low)</option>
+                    <option>Popularity</option>
+                    <option>Newest</option>
+                    <option>Oldest</option>
+                  </select>
+                </div>
+            </div>
+         </section>
+
+         <!-- OUR PRODUCTS -->
+        <section class="Products">
+            <section class="products-section">
+                <h2 class="products-title">Our Products</h2>
+                <div class="products-grid">
+        
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/syltherine.png" alt="Syltherine">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Syltherine</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                                <span class="original-price">Rp 3,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Leviosa.png" alt="Leviosa">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Leviosa</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Lolito.png" alt="Lolito">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="discount-badge">-50%</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lolito</h3>
+                            <p class="product-description">Luxury big sofa</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 7,000,000</span>
+                                <span class="original-price">Rp 14,000,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Respira.png" alt="Respira">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="new-badge">New</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Respira</h3>
+                            <p class="product-description">Outdoor bar table and stool</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 500,000</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/syltherine.png" alt="Syltherine">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Syltherine</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                                <span class="original-price">Rp 3,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Leviosa.png" alt="Leviosa">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Leviosa</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Lolito.png" alt="Lolito">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="discount-badge">-50%</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lolito</h3>
+                            <p class="product-description">Luxury big sofa</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 7,000,000</span>
+                                <span class="original-price">Rp 14,000,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Respira.png" alt="Respira">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="new-badge">New</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Respira</h3>
+                            <p class="product-description">Outdoor bar table and stool</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 500,000</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/syltherine.png" alt="Syltherine">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Syltherine</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                                <span class="original-price">Rp 3,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Leviosa.png" alt="Leviosa">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Leviosa</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Lolito.png" alt="Lolito">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="discount-badge">-50%</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lolito</h3>
+                            <p class="product-description">Luxury big sofa</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 7,000,000</span>
+                                <span class="original-price">Rp 14,000,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Respira.png" alt="Respira">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="new-badge">New</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Respira</h3>
+                            <p class="product-description">Outdoor bar table and stool</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 500,000</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/syltherine.png" alt="Syltherine">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            
+                            <span class="discount-badge">-30%</span>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Syltherine</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                                <span class="original-price">Rp 3,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Leviosa.png" alt="Leviosa">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Leviosa</h3>
+                            <p class="product-description">Stylish cafe chair</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 2,500,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Lolito.png" alt="Lolito">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="discount-badge">-50%</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Lolito</h3>
+                            <p class="product-description">Luxury big sofa</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 7,000,000</span>
+                                <span class="original-price">Rp 14,000,000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="./media/Respira.png" alt="Respira">
+                            <div class="product-overlay">
+                                <button class="add-to-cart">Add to cart</button>
+                                <div class="product-actions">
+                                    <button>🔗 Share</button>
+                                    <button>🔄 Compare</button>
+                                    <button>❤️ Like</button>
+                                </div>
+                            </div>
+                            <span class="new-badge">New</span>
+                            
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-name">Respira</h3>
+                            <p class="product-description">Outdoor bar table and stool</p>
+                            <div class="product-price">
+                                <span class="current-price">Rp 500,000</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pagination Section -->
+                <div class="pagination">
+                    <a href="index2.html" class="pagination-box">1</a>
+                    <a href="index2.html" class="pagination-box">2</a>
+                    <a href="index2.html" class="pagination-box">3</a>
+                    <div class="pagination-box">Next</div>
+                </div>
+            </section>
+        </section>
+    </main>
     
 </body>
 </html>
