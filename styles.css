@@ -383,10 +383,12 @@ body {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        
     }
 
     .footer-column {
         width: 100%;
+        
     }
 
     .footer-links, .footer-help {

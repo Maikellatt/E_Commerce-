@@ -207,7 +207,7 @@ select:focus {
 @media screen and (max-width: 880px) {
     .toolbar {
         display: flex;
-        flex-direction: column; /* Paigutame kõik vertikaalselt */
+        flex-direction: column; 
         padding: 10px 15px;
         background-color: #F9F1E7;
         border-bottom: 1px solid #ddd;
@@ -217,7 +217,7 @@ select:focus {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 10px; /* Väiksem vaheline kaugus */
+        gap: 10px; 
         margin-left: 0;
     }
 
@@ -226,7 +226,7 @@ select:focus {
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-        margin-top: 10px; /* Paigutame sellele väikse ülemise vahe */
+        margin-top: 10px;
     }
 
     .filter-icon, .view-howmany, .list-icon {
@@ -257,7 +257,7 @@ select:focus {
 
     .dropdown, .sort-dropdown {
         display: flex;
-        flex-direction: column; /* Üks valik all, teine üleval */
+        flex-direction: column; 
         gap: 5px;
     }
 
@@ -378,6 +378,7 @@ select:focus {
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 .product-card:hover {
     transform: translateY(-5px);
@@ -520,6 +521,10 @@ select:focus {
         padding-right: 40px;
     }
 
+    .product-card {
+        text-decoration: none;
+    }
+
     .products-title {
         font-size: 32px;
         margin-bottom: 24px;
@@ -559,6 +564,7 @@ select:focus {
 
     .product-card {
         border-radius: 8px;
+        text-decoration: none;
     }
 
     .product-name {
@@ -658,5 +664,139 @@ select:focus {
         width: 70px; 
         height: 50px;
         font-size: 18px; 
+    }
+}
+
+
+/* WHY FUNIRO */
+
+.why-funiro {
+    display: flex;
+    flex-direction: row;
+    background-color: #FAF3EA;
+    margin: 0;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: -7px;
+    
+}
+
+.selling-points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.selling-points-text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.selling-points h2 {
+    margin-bottom: 5px; 
+}
+
+.selling-points p {
+    margin-top: 0;
+    line-height: 1.2; 
+}
+
+.selling-points img {
+    width: 60px;
+    height: 60px;
+    
+}
+
+.value-text {
+    font-weight: 600;
+    font-size: 25px;
+    color: #242424;
+}
+
+.benefits-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #898989;
+}
+
+@media screen and (max-width: 880px) {
+    .why-funiro {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .selling-points {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Vähenes vahe elementide vahel */
+    }
+
+    .selling-points img {
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+    .selling-points-text {
+        align-items: center;
+       margin-top: -20px;
+    }
+
+    .selling-points h2 {
+        font-size: 20px;
+        margin-bottom: 3px; 
+    }
+
+    .selling-points p {
+        font-size: 14px;
+        margin-top: 0; 
+        line-height: 1.2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .why-funiro {
+        display: flex;
+        flex-direction: row; 
+        padding: 30px;
+        margin-top: 50px;
+        justify-content: space-between; 
+    }
+
+    .selling-points {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .selling-points-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin-top: 0;
+    }
+
+    .selling-points img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .selling-points h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        text-align: left; 
+    }
+
+    .selling-points p {
+        font-size: 16px;
+        margin-top: 0;
+        line-height: 1.2;
+        text-align: left; 
     }
 }
