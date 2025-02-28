@@ -1,0 +1,128 @@
+.blog-banner {
+    display: flex;
+    width: 100%;
+}
+
+.blog-banner-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 140px;
+    left: 640px;
+
+    
+}
+
+.main-blog {
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+
+
+.home-blog a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 16px
+}
+
+.home-blog span {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) { 
+    .blog-banner {
+        position: relative; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .blog-banner img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .blog-banner-overlay {
+        position: absolute; 
+        top: 50%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center; 
+        color: black; 
+        width: 90%; 
+    }
+
+    .main-blog {
+        font-size: 36px; 
+        font-weight: bold;
+    }
+
+    .home-blog {
+        font-size: 18px; 
+        margin-top: 10px; 
+    }
+
+    .home-blog a {
+        color: black; 
+        text-decoration: none;
+        font-weight: 500; 
+    }
+
+    .home-blog span {
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 430px) { 
+    .blog-banner {
+        position: relative; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .blog-banner img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .blog-banner-overlay {
+        position: absolute; 
+        top: 35%; 
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+        text-align: center; 
+        color: black; 
+        width: 10%; 
+    }
+
+    .main-blog {
+        font-size: 8px; 
+        font-weight: bold;
+        
+    }
+
+    .home-blog {
+        font-size: 10px; 
+        margin-top: 0;
+        display: flex;
+    
+    }
+
+    .home-blog a {
+        color: black; 
+        text-decoration: none; 
+        font-weight: 500;
+        font-size: 8px;
+    }
+
+    .home-blog span {
+        color: black;
+        font-weight: 300;
+        font-size: 8px; 
+    }
+}
