@@ -78,7 +78,7 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 430px) {
     .banner {
         height: 400px; 
     }
@@ -205,7 +205,7 @@
     color: #333333;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 430px) {
     .browse-options {
         display: flex;
         flex-direction: column;
@@ -215,68 +215,93 @@
     }
 
     .browse-options img {
-        max-width: 350px;
+        max-width: 100%; 
+        width: 100%; 
+        height: auto;
+        margin: 0 auto; 
+        display: block; 
     }
 
     .browse-option p {
         font-size: 18px; 
+        text-align: center; 
     }
 
     .browse-text h2 {
         font-size: 24px; 
+        text-align: center;
     }
 
     .browse-text p {
         font-size: 14px; 
+        text-align: center;
     }
 
     .browse-range-title {
         font-size: 24px; 
+        text-align: center;
     }
 
     .browse-range-description {
         font-size: 14px; 
+        text-align: center;
     }
 
     .browse-image-container {
+        display: flex;
         flex-direction: column;
         gap: 30px; 
+        align-items: center; 
+    }
+
+    .browse-image {
+        width: 100%; 
+        max-width: 350px; 
+        height: auto;
     }
 
     .browse-image-name {
-        font-size: 18px; 
+        font-size: 18px;
+        text-align: center;
     }
 }
+
+
 @media screen and (max-width: 1024px) {
     .browse-range-title {
         font-size: 28px; 
     }
-
-   
 
     .browse-range-description {
         font-size: 16px;
     }
 
     .browse-image-container {
+        display: flex; 
+        flex-wrap: wrap; 
         gap: 15px;
-         
+        justify-content: center; 
     }
 
+    .browse-image {
+        flex: 1 1 calc(33.33% - 20px); 
+        max-width: calc(33.33% - 20px);
+        box-sizing: border-box; 
+    }
 
     .browse-image-name {
         font-size: 18px; 
     }
 
     .browse-options {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
         padding-left: 40px;
         padding-right: 40px;
         gap: 10px;
-      
     }
     
-   
-
     .browse-option p {
         font-size: 20px; 
     }
@@ -288,14 +313,15 @@
     .browse-text p {
         font-size: 16px; 
     }
+
     .browse-text {
         display: flex;
         justify-content: center; 
         align-items: center; 
         text-align: center; 
     }
-    
 }
+
 
 
 /* PRODUCTS */
@@ -495,7 +521,7 @@
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 430px) {
     .products-grid {
         grid-template-columns: 1fr; 
         gap: 12px;
@@ -741,7 +767,7 @@
     background-color: #777777;
 }
 
-@media (max-width: 880px) { 
+@media (max-width: 430px) { 
     .rooms-container {
         display: flex;
         flex-direction: column;
@@ -807,43 +833,92 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+/* Tahvli vaade: 431px kuni 1024px */
+@media (min-width: 431px) and (max-width: 1024px) {
     .rooms-container {
         display: flex;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .rooms-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-left: 0px;
+        width: 60%;
     }
 
     .rooms-text {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: -50px;
+        text-align: center;
+        width: 40%;
+        max-width: 300px;
     }
 
     .rooms-text h2 {
-        align-items: center;
-        
+        font-size: 22px;
+        margin: 0;
+        margin-bottom: 20px;
     }
 
     .rooms-text p {
-        align-items: center;
-        margin-left: 150px;
-        
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .rooms-overlay {
+        width: 100px;
+        height: 100px;
+        max-width: 180px;
+        margin-left: 20px;
+    }
+
+    .rooms-overlay span {
+        font-size: 12px;
     }
 
     .rooms-overlay2 {
-        margin-left: 10px;
+        margin-left: -25px;
+        width: 200px;
+        max-width: 250px;
     }
 
     .rooms-pagination {
-        margin-left: -20px;
+        margin-left: 100px;
     }
 
     .rooms-next-btn {
-        margin-right: 40px;
+        margin-right: 50px;
     }
 
-    
+    /* Piltide suuruse kohandamine */
+    .rooms-main img {
+        width: 250px;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .rooms-secondary-img {
+        width: 220px;
+        height: auto;
+        max-width: 100%;
+    }
 }
+
+
+
 
 
 
