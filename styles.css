@@ -312,7 +312,7 @@ body {
 }
 
 .footer-email-input {
-    width: 50%; 
+    width: 200px; 
     padding: 10px;
     border: none;
     border-bottom: 1px solid black; 
@@ -342,6 +342,7 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        margin-left: 50px;
     }
 
     .footer-column {
@@ -379,10 +380,11 @@ body {
 }
 
 
-@media (max-width: 880px) {
+@media (max-width: 430px) {
     .footer-container {
         flex-direction: column;
         text-align: center;
+        margin-left: 50px;
         
     }
 
@@ -401,10 +403,16 @@ body {
     }
 
     .footer-email-input {
-        width: 90%;
+        width: 120px;
+        margin-left: 40px;
     }
 
     .footer-email-btn {
-        width: 70%;
+        width: 120px;
+        margin-left: 40px;
+    }
+
+    .footer-copyright-text {
+        margin-left: 20px;
     }
 }
