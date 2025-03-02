@@ -39,3 +39,18 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+document.getElementById('decrease').addEventListener('click', function() {
+    let quantity = document.getElementById('quantity');
+    let currentQuantity = parseInt(quantity.textContent);
+    if (currentQuantity > 1) {
+        quantity.textContent = currentQuantity - 1;
+    }
+});
+
+document.getElementById('increase').addEventListener('click', function() {
+    let quantity = document.getElementById('quantity');
+    let currentQuantity = parseInt(quantity.textContent);
+    quantity.textContent = currentQuantity + 1;
+});
