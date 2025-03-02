@@ -740,7 +740,7 @@ select:focus {
     .selling-points {
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Vähenes vahe elementide vahel */
+        gap: 10px; 
     }
 
     .selling-points img {
