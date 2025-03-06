@@ -104,6 +104,11 @@
         width: 10%; 
     }
 
+    .contact-banner-overlay h1 {
+        margin-bottom: -2px;
+        margin-top: -8px;
+    }
+
     .main-contact {
         font-size: 8px; 
         font-weight: bold;
@@ -131,10 +136,12 @@
     }
 }
 
+/* <!-- CONTACT SECTOR */
 .contact {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    margin-bottom: -30PX;
 }
 
 .contact-header {
@@ -277,3 +284,225 @@ input[id="subject"] {
     border-radius: 10px;
     border: 1px solid #9F9F9F; 
 }
+input[id="message"] {
+    width: 527px;  
+    height: 100px; 
+    padding: 10px; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+    border-radius: 10px;
+    border: 1px solid #9F9F9F; 
+}
+.submit-button {
+    width: 237px;  
+    height: 55px; 
+    padding: 10px; 
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    background-color: #B88E2F;
+    border-radius: 8px;
+    border: 1px solid #B88E2F; 
+}
+
+@media (min-width: 431px) and (max-width: 1024px) {
+    .contact {
+        display: flex;
+        margin-left: -120px;
+    }
+
+    .contact-header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+        
+    }
+
+    .contact-columns {
+        gap: 150px;
+    }
+
+    .left-column p {
+        font-weight: 400;
+        font-size: 14px;
+        
+        
+    }
+
+    input[id="name"] {
+        width: 250px;
+    }
+    input[id="email"] {
+        width: 250px;
+    }
+    input[id="subject"] {
+        width: 250px;
+    }
+    input[id="message"] {
+        width: 250px;
+    }
+
+    
+}
+
+@media screen and (max-width: 430px) {
+    .contact {
+        margin-top: 30px;
+    }
+    .contact-columns {
+        display: flex;
+        flex-direction: column;
+        margin-left: -50px;
+        width: 60%;
+        gap: 30px;
+        margin-top: -40px;
+    }
+    input[id="name"] {
+        width: 250px;
+    }
+    input[id="email"] {
+        width: 250px;
+    }
+    input[id="subject"] {
+        width: 250px;
+    }
+    input[id="message"] {
+        width: 250px;
+    }
+}
+
+/* WHY FUNIRO */
+.why-funiro {
+    display: flex;
+    flex-direction: row;
+    background-color: #FAF3EA;
+    margin: 0;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 50px;
+    margin-bottom: -7px;
+    
+}
+
+.selling-points {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.selling-points-text {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+}
+
+.selling-points h2 {
+    margin-bottom: 5px; 
+}
+
+.selling-points p {
+    margin-top: 0;
+    line-height: 1.2; 
+}
+
+.selling-points img {
+    width: 60px;
+    height: 60px;
+    
+}
+
+.value-text {
+    font-weight: 600;
+    font-size: 25px;
+    color: #242424;
+}
+
+.benefits-text {
+    font-weight: 500;
+    font-size: 20px;
+    color: #898989;
+}
+
+@media screen and (max-width: 430px) {
+    .why-funiro {
+        flex-direction: column;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .selling-points {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .selling-points img {
+        width: 50px;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+    .selling-points-text {
+        align-items: center;
+       margin-top: -20px;
+    }
+
+    .selling-points h2 {
+        font-size: 20px;
+        margin-bottom: 3px; 
+    }
+
+    .selling-points p {
+        font-size: 14px;
+        margin-top: 0; 
+        line-height: 1.2;
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .why-funiro {
+        display: flex;
+        flex-direction: row; 
+        padding: 30px;
+        margin-top: 50px;
+        justify-content: space-between; 
+    }
+
+    .selling-points {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 10px; 
+    }
+
+    .selling-points-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+        margin-top: 0;
+    }
+
+    .selling-points img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .selling-points h2 {
+        font-size: 22px;
+        margin-bottom: 5px;
+        text-align: left; 
+    }
+
+    .selling-points p {
+        font-size: 16px;
+        margin-top: 0;
+        line-height: 1.2;
+        text-align: left; 
+    }
+}
+
