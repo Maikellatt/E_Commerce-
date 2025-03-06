@@ -3,6 +3,10 @@
     width: 100%;
 }
 
+.shop-banner-picture {
+    width: 100%;
+}
+
 .shop-banner-overlay {
     display: flex;
     flex-direction: column;
